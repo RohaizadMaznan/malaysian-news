@@ -1,4 +1,5 @@
 import styles from "../../styles/Feed.module.css";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { Toolbar } from "../../components/toolbar";
@@ -12,18 +13,40 @@ function Feed({ articles, pageNumber }) {
         <meta property="og:description" content={articles[0]?.description} />
         <meta property="og:title" content={articles[0]?.title + " and more!"} />
       </Head>
-      <div className="page-container">
+      <div className="page-container container mx-auto">
         <Toolbar />
         <div className={styles.main}>
-          {articles.map((article, index) => (
-            <div key={index} className={styles.post}>
-              <h1 onClick={() => (window.location.href = article.url)}>
-                {article.title}
-              </h1>
-              <p>{article.description}</p>
-              {!!article.urlToImage && <img src={article.urlToImage} />}
-            </div>
-          ))}
+          <div className="grid grid-cols-4 gap-4 cursor-pointer">
+            {articles.map((article, index) => (
+              <Link href={article.url} passHref>
+                <a target="_blank" rel="noreferrer">
+                  <div
+                    key={index}
+                    className="px-2 py-4 bg-gray-100 rounded-md group hover:shadow-md"
+                  >
+                    {article.urlToImage ? (
+                      <img
+                        src={article.urlToImage}
+                        className="w-full h-40 object-cover rounded-md"
+                      />
+                    ) : (
+                      <div className="w-full h-40 bg-gray-200 rounded-md"></div>
+                    )}
+                    <div className="px-5 py-6 flex-col justify-start space-y-4 ">
+                      <div>
+                        <p className="text-2xl font-bold">{article.title}</p>
+                      </div>
+                      <div>
+                        <p className="text-md text-gray-500 group-hover:text-[#4120fd]">
+                          {article.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className={styles.paginator}>
@@ -73,7 +96,7 @@ function Feed({ articles, pageNumber }) {
 export async function getServerSideProps(context) {
   const pageNumber = context.query.slug;
 
-  if (!pageNumber || pageNumber < 1 || pageNumber > 5) {
+  if (!pageNumber || pageNumber < 1 || pageNumber > 9) {
     return {
       props: {
         articles: [],
@@ -83,7 +106,7 @@ export async function getServerSideProps(context) {
   }
 
   const apiResponse = await fetch(
-    `https://newsapi.org/v2/top-headlines?country=my&&apiKey=${process.env.NEXT_PUBLIC_NEWS_KEY}&pageSize=5&page=${pageNumber}`
+    `https://newsapi.org/v2/top-headlines?country=my&&apiKey=${process.env.NEXT_PUBLIC_NEWS_KEY}&pageSize=12&page=${pageNumber}`
   ).then((res) => res.json());
 
   const { articles } = apiResponse;
