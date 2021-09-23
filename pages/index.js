@@ -94,7 +94,7 @@ export const Home = ({ detail }) => {
                 variants={fadeInUp}
                 className="px-10 py-4 rounded cursor-pointer mt-5"
               >
-                Light mode
+                {theme === "dark" ? "Light mode" : "Dark mode"}
               </motion.div>
             </div>
           </div>
