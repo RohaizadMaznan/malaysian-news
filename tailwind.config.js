@@ -1,7 +1,14 @@
 module.exports = {
   mode: "jit",
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  purge: {
+    enabled: true,
+    content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  },
+  darkMode: 'class',
+  theme: {
+    typography: (theme) => ({}),
+    extend: {},
+  },
   theme: {
     extend: {
       opacity: ["disabled"],
@@ -223,5 +230,5 @@ module.exports = {
     boxShadow: ["responsive", "hover", "focus", "focus-within"],
     opacity: ["responsive", "hover", "focus", "group-hover"],
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }

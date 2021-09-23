@@ -3,51 +3,87 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { Toolbar } from "../../components/toolbar";
+import { motion } from "framer-motion";
+
+const easing = [0.6, -0.05, 0.01, 0.99];
+
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.6, ease: easing },
+  },
+};
+
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 function Feed({ articles, pageNumber }) {
   const router = useRouter();
   return (
-    <>
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <Head>
+        <title>Malaysian News - Rohaizad Maznan</title>
         <meta property="og:image" content={articles[0]?.urlToImage} />
         <meta property="og:description" content={articles[0]?.description} />
         <meta property="og:title" content={articles[0]?.title + " and more!"} />
       </Head>
       <div className="page-container container mx-auto">
         <Toolbar />
-        <div className={styles.main}>
-          <div className="grid grid-cols-4 gap-4 cursor-pointer">
+        <motion.div variant={stagger} className={styles.main}>
+          <motion.div variant={fadeInUp} className="flex-col md:grid md:grid-cols-4 gap-4 cursor-pointer">
             {articles.map((article, index) => (
               <Link href={article.url} passHref>
                 <a target="_blank" rel="noreferrer">
                   <div
                     key={index}
-                    className="px-2 py-4 bg-gray-100 rounded-md group hover:shadow-md"
+                    className="px-2 py-4 bg-gray-100 dark:bg-gray-900 rounded-md group hover:shadow-md"
                   >
                     {article.urlToImage ? (
-                      <img
+                      <motion.img
+                        initial={{ x: -60, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        trasition={{ delay: 0.2 }}
                         src={article.urlToImage}
                         className="w-full h-40 object-cover rounded-md"
                       />
                     ) : (
-                      <div className="w-full h-40 bg-gray-200 rounded-md"></div>
+                      <motion.div
+                        initial={{ x: -60, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        trasition={{ delay: 0.2 }}
+                        className="w-full h-40 bg-gray-200 dark:bg-gray-800 rounded-md"
+                      ></motion.div>
                     )}
-                    <div className="px-5 py-6 flex-col justify-start space-y-4 ">
-                      <div>
+                    <motion.div variant={stagger} className="px-5 py-6 flex-col justify-start space-y-4 ">
+                      <motion.div variant={fadeInUp}>
                         <p className="text-2xl font-bold">{article.title}</p>
-                      </div>
-                      <div>
-                        <p className="text-md text-gray-500 group-hover:text-[#4120fd]">
+                      </motion.div>
+                      <motion.div variant={fadeInUp}>
+                        <p className="text-md group-hover:text-[#4120fd] dark:group-hover:text-[#8e7bff]">
                           {article.description}
                         </p>
-                      </div>
-                    </div>
+                      </motion.div>
+                    </motion.div>
                   </div>
                 </a>
               </Link>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <div className={styles.paginator}>
           <div
@@ -89,7 +125,7 @@ function Feed({ articles, pageNumber }) {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
 

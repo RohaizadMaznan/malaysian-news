@@ -1,12 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/EOM.module.css";
 import { Toolbar } from "../components/toolbar";
+import Image from 'next/image'
 
 export const EOM = ({ employee }) => {
   return (
     <>
       <Head>
-        <title>Employee Of The Month</title>
+        <title>Author</title>
         <meta
           name="description"
           content={`This month's employee of the month is ${employee.name}`}
@@ -36,7 +37,7 @@ export const EOM = ({ employee }) => {
           <div className={styles.employeeOfTheMonth}>
             <h3>{employee.name}</h3>
             <h6>{employee.position}</h6>
-            <img src={employee.image} alt="employee" />
+            <Image src={employee.image} alt="Picture of the author" />
             <p>{employee.description}</p>
           </div>
         </div>

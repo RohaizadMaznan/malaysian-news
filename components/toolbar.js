@@ -11,7 +11,7 @@ export const Toolbar = () => {
         <Link href="/feed/1">Feed</Link>
       </div>
       <div>
-        <Link href="/eom">EOM</Link>
+        <Link href="/author">Author</Link>
       </div>
       <div>
         <Link href="https://twitter.com/rohaizadmaznan">Twitter</Link>
