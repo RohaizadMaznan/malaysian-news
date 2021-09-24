@@ -67,7 +67,7 @@
                "lastName": "Shazni",
                "email": "amirul1996@gmail.com",
                "contactNo": "0178629918",
-            },
+            }
          ],
          "invoice": [
             {
@@ -83,8 +83,8 @@
                "numberAdult": "2",
                "numberChild": "1",
                "description": "TBA descriptions, contact activity in-charged to get more details!",
-            },
-         ],
-      },
+            }
+         ]
+      }
    ]
 }
