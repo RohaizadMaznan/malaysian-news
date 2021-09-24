@@ -35,7 +35,7 @@
          "firstName":"Rohaizad",
          "lastName":"Maznan",
          "email":"rohaizadmaznan@gmail.com",
-         "contactNo":"0197070023"
+         "contactNo":"0197070023",
          "deposit":"100.00",
          "adultPrice":"200.00",
          "childPrice":"130.00",
@@ -51,8 +51,8 @@
             "sessionType": "Morning",
             "sessionStart": "08:00:00 AM",
             "sessionEnd": "10:00:00 AM",
-            "hours": "2",
-         }
+            "hours": "2"
+         },
          "invoice":[
             {
                "invoiceId":"INV-23-10-001",
@@ -73,7 +73,7 @@
          "firstName":"Amirul",
          "lastName":"Shazni",
          "email":"amirul1996@gmail.com",
-         "contactNo":"0178629918"
+         "contactNo":"0178629918",
          "deposit":"60.00",
          "adultPrice":"180.00",
          "childPrice":"90.00",
