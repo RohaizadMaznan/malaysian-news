@@ -9,13 +9,17 @@
       {
          "id":"1",
          "name":"Pulau Langkawi",
-         "description":"The Australian Financial Review reports the latest news from business, finance, investment and politics, updated in real time. It has a reputation for independent, award-winning journalism and is essential reading for the business and investor community.",
-         "urlToImage":"https://apicms.thestar.com.my/uploads/images/2021/09/24/1306226.jpg",
+         "negeri":"Kedah",
+         "honorific":"Darul Aman",
+         "description":"Langkawi, officially known as Langkawi, the Jewel of Kedah, is a district and an archipelago of 99 islands in the Malacca Strait. some 30 km off the coast of northwestern Malaysia. The islands are a part of the state of Kedah, which is adjacent to the Thai border; the islands are a few kilometres south of Ko Tarutao.",
+         "urlToImage":"https://assets.bharian.com.my/images/articles/10langkawi.transformed.jpg",
          "publishedAt":"2021-09-24T05:49:00Z"
       },
       {
          "id":"2",
          "name":"Pulau Tioman",
+         "negeri":"Pahang",
+         "honorific":"Darul Makmur",
          "description":"Tioman Island lies off the east coast of Peninsular Malaysia, in the South China Sea. It's a nature reserve, ringed by beaches. The area is known for its dive sites, which have corals, sea fans and sea sponges, as well as shipwrecks. The island is covered in tropical rainforests, home to butterflies, lizards and monkeys. On the east coast, the Juara Turtle Project is a hatchery that protects and studies sea turtles.",
          "urlToImage":"https://gojohor.my/site/wp-content/uploads/2014/02/pulau-tioman.jpg",
          "publishedAt":"2021-09-24T05:49:00Z"
