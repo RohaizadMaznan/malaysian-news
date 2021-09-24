@@ -7,7 +7,7 @@
    },
    "isles":[
       {
-         "id":"1",
+         "id":1,
          "name":"Pulau Langkawi",
          "negeri":"Kedah",
          "honorific":"Darul Aman",
@@ -16,7 +16,7 @@
          "publishedAt":"2021-09-24T05:49:00Z"
       },
       {
-         "id":"2",
+         "id":2,
          "name":"Pulau Tioman",
          "negeri":"Pahang",
          "honorific":"Darul Makmur",
