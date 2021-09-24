@@ -1,24 +1,24 @@
 {
-    "employeeOfTheMonth": {
-      "name": "Rohaizad Maznan",
-      "position": "Software Engineer",
-      "image": "https://miro.medium.com/max/3150/1*X6IDI9LqATYpd9KYbTWwHg.jpeg",
-      "description": "Doing web application using ReactJS"
-    },
-    "isles": [
-        {
-            "id": "1",
-            "name": "Pulau Langkawi",
-            "description": "The Australian Financial Review reports the latest news from business, finance, investment and politics, updated in real time. It has a reputation for independent, award-winning journalism and is essential reading for the business and investor community.",
-            "urlToImage": "https://apicms.thestar.com.my/uploads/images/2021/09/24/1306226.jpg",
-            "publishedAt": "2021-09-24T05:49:00Z"
-        },
-        {
-            "id": "2",
-            "name": "Pulau Tioman",
-            "description": "Tioman Island lies off the east coast of Peninsular Malaysia, in the South China Sea. It's a nature reserve, ringed by beaches. The area is known for its dive sites, which have corals, sea fans and sea sponges, as well as shipwrecks. The island is covered in tropical rainforests, home to butterflies, lizards and monkeys. On the east coast, the Juara Turtle Project is a hatchery that protects and studies sea turtles.",
-            "urlToImage": "https://gojohor.my/site/wp-content/uploads/2014/02/pulau-tioman.jpg",
-            "publishedAt": "2021-09-24T05:49:00Z"
-        }
-    ],
+   "employeeOfTheMonth":{
+      "name":"Rohaizad Maznan",
+      "position":"Software Engineer",
+      "image":"https://miro.medium.com/max/3150/1*X6IDI9LqATYpd9KYbTWwHg.jpeg",
+      "description":"Doing web application using ReactJS"
+   },
+   "isles":[
+      {
+         "id":"1",
+         "name":"Pulau Langkawi",
+         "description":"The Australian Financial Review reports the latest news from business, finance, investment and politics, updated in real time. It has a reputation for independent, award-winning journalism and is essential reading for the business and investor community.",
+         "urlToImage":"https://apicms.thestar.com.my/uploads/images/2021/09/24/1306226.jpg",
+         "publishedAt":"2021-09-24T05:49:00Z"
+      },
+      {
+         "id":"2",
+         "name":"Pulau Tioman",
+         "description":"Tioman Island lies off the east coast of Peninsular Malaysia, in the South China Sea. It's a nature reserve, ringed by beaches. The area is known for its dive sites, which have corals, sea fans and sea sponges, as well as shipwrecks. The island is covered in tropical rainforests, home to butterflies, lizards and monkeys. On the east coast, the Juara Turtle Project is a hatchery that protects and studies sea turtles.",
+         "urlToImage":"https://gojohor.my/site/wp-content/uploads/2014/02/pulau-tioman.jpg",
+         "publishedAt":"2021-09-24T05:49:00Z"
+      }
+   ]
 }
