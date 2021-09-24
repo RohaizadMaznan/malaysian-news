@@ -27,61 +27,72 @@
    ],
    "booking":[
       {
-         "bookingId":"bid-90291",
-         "bookingStatus":"Paid",
+         "bookingId":"bid-80291",
+         "bookingStatus":"Pending",
          "bookingCode":"Payment",
-         "userBook":[
-            {
-               "uid":"ndukwjdnbwbdw23uh21m",
-               "firstName":"Rohaizad",
-               "lastName":"Maznan",
-               "email":"rohaizadmaznan@gmail.com",
-               "contactNo":"0197070023"
-            }
-         ],
+         "bookingArea":"Activity",
+         "uid":"dnwbbfwinsjndjwei381msk",
+         "firstName":"Rohaizad",
+         "lastName":"Maznan",
+         "email":"rohaizadmaznan@gmail.com",
+         "contactNo":"0197070023"
+         "deposit":"100.00",
+         "adultPrice":"200.00",
+         "childPrice":"130.00",
+         "activityType":"Jetski",
+         "activityId":"bfdwefgbwkjsi281j",
+         "company":"Company ABC Watersport",
+         "location":"Pulau Tengah",
+         "quantity":"3",
+         "numberAdult":"2",
+         "numberChild":"1",
+         "session": {
+            "sessionId": "dnbuwefugbwjh3278hf",
+            "sessionType": "Morning",
+            "sessionStart": "08:00:00 AM",
+            "sessionEnd": "10:00:00 AM",
+            "hours": "2",
+         }
          "invoice":[
             {
                "invoiceId":"INV-23-10-001",
-               "type":"Watersport",
-               "activity":"Jetski",
-               "company":"Company ABC Watersport",
-               "location":"Pulau Langkawi",
-               "adultPrice":"150.00",
-               "childPrice":"120.00",
-               "deposit":"50.00",
-               "quantity":"4",
-               "numberAdult":"2",
-               "numberChild":"2",
+               "price": "530.00",
+               "qtyAdult": "2",
+               "qtyChild": "1",
+               "status": "PENDING",
                "description":"TBA descriptions, contact activity in-charged to get more details!"
             }
          ]
       },
       {
          "bookingId":"bid-80291",
-         "bookingStatus":"Pending",
+         "bookingStatus":"Success",
          "bookingCode":"Payment",
-         "userBook":[
-            {
-               "uid":"ndukwjdnbwbdw23uh21m",
-               "firstName":"Amirul",
-               "lastName":"Shazni",
-               "email":"amirul1996@gmail.com",
-               "contactNo":"0178629918"
-            }
-         ],
+         "bookingArea":"Accomodation",
+         "uid":"ndukwjdnbwbdw23uh21m",
+         "firstName":"Amirul",
+         "lastName":"Shazni",
+         "email":"amirul1996@gmail.com",
+         "contactNo":"0178629918"
+         "deposit":"60.00",
+         "adultPrice":"180.00",
+         "childPrice":"90.00",
+         "roomType":"Single bed",
+         "roomId":"bfdwefgbwkjsi281j",
+         "company":"Company Malibu Resort",
+         "location":"Pulau Langkawi",
+         "checkInTime":"12:00:00 PM 19 August 2021",
+         "checkOutTime": "12:00:00 PM 21 August 2021",
+         "quantity":"2",
+         "numberAdult":"2",
+         "numberChild":"0",
          "invoice":[
             {
-               "invoiceId":"INV-12-11-001",
-               "type":"Into the jungle",
-               "activity":"Hiking",
-               "company":"Company Malibu Hike",
-               "location":"Pulau Langkawi",
-               "adultPrice":"150.00",
-               "childPrice":"80.00",
-               "deposit":"20.00",
-               "quantity":"3",
-               "numberAdult":"2",
-               "numberChild":"1",
+               "invoiceId":"INV-23-10-002",
+               "price": "360.00",
+               "qtyAdult": "2",
+               "qtyChild": "0",
+               "status": "PAID",
                "description":"TBA descriptions, contact activity in-charged to get more details!"
             }
          ]
