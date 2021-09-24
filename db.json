@@ -24,5 +24,37 @@
          "urlToImage":"https://gojohor.my/site/wp-content/uploads/2014/02/pulau-tioman.jpg",
          "publishedAt":"2021-09-24T05:49:00Z"
       }
+   ],
+   "booking":[
+      {
+         "bookingId": "bid-90291",
+         "bookingStatus": "Paid",
+         "bookingCode": "Payment",
+         "userBook": [
+            {
+               "uid" : "ndukwjdnbwbdw23uh21m",
+               "firstName": "Rohaizad",
+               "lastName": "Maznan",
+               "email": "rohaizadmaznan@gmail.com",
+               "contactNo": "0197070023",
+            },
+         ],
+         "invoice": [
+            {
+               "invoiceId": "INV-23-10-001",
+               "type" : "Watersport",
+               "activity" : "Jetski",
+               "company" : "Company ABC Watersport",
+               "location" : "Pulau Langkawi",
+               "adultPrice": "150.00",
+               "childPrice": "150.00",
+               "deposit": "50.00",
+               "quantity": "4",
+               "numberAdult": "2",
+               "numberChild": "2",
+               "description": "TBA descriptions, contact activity in-charged to get more details!",
+            },
+         ],
+      },
    ]
 }
